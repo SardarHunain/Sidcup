@@ -5,12 +5,24 @@
     font-family: 'montserrat';
     color: #fff;
 }
+*::selection{
+    background-color: #fff;
+    color:#95C11E;
+}
 
 html,body {
     height: 100%;
     width: 100%;   
 }
-
+body::-webkit-scrollbar{
+    display: block;
+    width: 8px;
+    background: linear-gradient(to right,#95C11E,#000);
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    border-radius: 50px;
+}
 
 #cursor{
     height: 20px;
@@ -357,4 +369,37 @@ video{
     left: 0;
     height: 100%;
     z-index: 0;
+}
+#f1 img{
+    height: 100px;
+}
+#f1,#f2,#f3,#f4{
+    width: fit-content;
+    position: relative;
+    z-index: 2;
+}
+#f2 h3{
+    font-size: 20px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+#f3 h3{
+    font-size: 18px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+#f4 h4{
+    font-size: 18px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 900;
+    margin-bottom: 8px;
+    line-height: 20px;
 }
