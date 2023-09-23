@@ -34,7 +34,6 @@ html,body {
 #nav{
     height: 145px;
     width: 100%;
-    /*background-color: red;*/ 
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -144,4 +143,32 @@ video{
     to{
         transform: translateX(-100%);
     }
+}
+#about-us{
+    height:  40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+    padding: 0 50px;
+    position: relative;
+}
+#about-us img{
+    height: 220px;
+    width: 220px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+#about-us-in{
+    width: 50%;
+    text-align: center;
+}
+#about-us-in h3{
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+#about-us-in p{
+    font-size: 18px;
+    line-height: 22px;
 }
